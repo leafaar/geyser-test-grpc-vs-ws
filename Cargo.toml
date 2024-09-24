@@ -1,0 +1,27 @@
+[package]
+name = "geyser-test-grpc-vs-ws"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+yellowstone-grpc-client = "1.15.4"
+yellowstone-grpc-proto = "1.14.2"
+tokio = { version = "1.40.0", features = ["rt-multi-thread", "full"] }
+log = "0.4.20"
+futures = "0.3.30"
+rand = "0.8.5"
+env_logger = "0.11.5"
+dotenv = "0.15.0"
+cadence = "1.4.0"
+cadence-macros = "1.4.0"
+chrono = "0.4.38"
+colored = "2.1.0"
+serde = { version = "1.0.210", features = ["derive"] }
+serde_json = "1.0.128"
+tokio-tungstenite = { version = "0.18.0", features = [
+    "rustls-tls-native-roots",
+] }
+futures-util = "0.3.30"
+dashmap = "6.1.0"
+ratatui = "0.28.1"
+crossterm = "0.28.1"
